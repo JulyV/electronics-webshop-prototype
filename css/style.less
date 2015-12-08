@@ -32,17 +32,22 @@ section, summary, time, mark, audio, video {
 
 body, html {
 	.g-font-style;
-	display: table;
 	width: 100%;
 	height: 100%;
 	text-align: center;
 	position: relative;
 }
 
+body {
+	display: table;
+}
+
 @menu-color: rgba(12,182,205,.8);
 @sub-menu-color: rgb(178,178,178);
 @main-blocks-width: 100%;
 @inner-blocks-width: @main-blocks-width/2;
+@media-width-all: 880px;
+@media-width-mobile: 635px;
 @search-background-color: rgba(255,255,255,.6);
 @g-margin-b: 10px;
 
@@ -55,36 +60,47 @@ body, html {
 		background-color: @sub-menu-color;
 		&-list {
 			width: @inner-blocks-width;
+			@media (max-width: @media-width-all) {width: 60%;}
+			@media (max-width: @media-width-mobile) {display: none;}
 			display: inline-block;
 			text-align: right;
 			&__item {
 				display: inline-block;
-				margin-top: 5px;		
+				margin-top: 5px;	
 			& a {
 				text-transform: uppercase;
 				.g-a-style;
 				font-size: 12px;
+				@media (max-width: @media-width-all) {font-size: 8px;}
 				margin-right: 20px;
 			}
 			}
 		}
 		&-info {
 			width: @inner-blocks-width - 10;
+			@media (max-width: @media-width-all) {width: 30%;}
+			@media (max-width: @media-width-mobile) {width: 100%;}
 			display: inline-block;
 			text-align: left;
+			@media (max-width: @media-width-mobile) {text-align: center; margin-top: 5px;}
 			& li {
 				display: inline-block;
-				width: 200px
+				max-width: 200px;
+				min-width: 80px;
+				margin-right: 10px;
 			}
 			& span {
 				font-size: 12px;
+				@media (max-width: @media-width-all) {font-size: 8px;}
 				text-transform: uppercase;
 			}
 		}
 	}
 	&-menu {
 		width: @inner-blocks-width;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
 		height: 59px;
+		@media (max-width: @media-width-all) {height: 70px;}
 		text-align: center;
 		margin: 0 auto;
 		position: relative;
@@ -94,25 +110,32 @@ body, html {
 			& a {
 				text-transform: uppercase;
 				padding: 30px 20px 10px 20px;
+				@media (max-width: @media-width-mobile) {padding: 10px;}
 				display: inline-block;
 				&:hover {
 				background-color: @menu-color;
 				}
 				.g-a-style;
+				@media (max-width: @media-width-mobile) {font-size: 14px;}
 				color: #fff;
 			}
 		}
 		&-list {
 			display: inline-block;
+			margin: 0 auto;
+			@media (max-width: @media-width-mobile) {width: 200px;}
+
 		}
 
 		&-logo {
 			display: inline-block;
 			&__item {
 			width: 50px;
+			@media (max-width: @media-width-mobile) {width: 30px;}
 			position: absolute;
-			left: 0;
+			left: 5px;
 			top: 10px;
+			@media (max-width: @media-width-mobile) {top: 20px;}
 			}
 		}
 		&-search {
@@ -122,6 +145,7 @@ body, html {
 				background-color: @search-background-color;
 				border: none;
 				padding: 4px;
+				@media (max-width: @media-width-mobile) {position: absolute; bottom: 10px; left: 0; right: 0; margin: 0 auto; width: 190px;}
 			&:focus {
   				outline: none;
 			}
@@ -132,8 +156,9 @@ body, html {
 			&__item {
 				width: 30px;
 				position: absolute;
-				right: 20px;
+				right: 5px;
 				top: 25px;
+				@media (max-width: @media-width-all) {top: 20px;}
 			}
 		}
 	}
@@ -144,6 +169,8 @@ body, html {
 	background: url(../images/background-up.png); 
 	background-repeat: no-repeat;
 	position: relative;
+	margin: 0 auto;
+	@media (max-width: @media-width-all) {width: @main-blocks-width;}
 	&__prev {
 		position: absolute;
 		top: 50%;
@@ -154,6 +181,7 @@ body, html {
 		&:hover {
 			color: darken(@sub-menu-color, 20%);
 		}
+		@media (max-width: @media-width-all) {left: 0;}
 	}
 	&__next {
 		position: absolute;
@@ -165,41 +193,23 @@ body, html {
 		&:hover {
 			color: darken(@sub-menu-color, 20%);
 		}
+		@media (max-width: @media-width-all) {right: 0;}
 	}
     &__banner img {
+	margin-left: -4px;
+	margin-bottom: -5px;
 	width: @inner-blocks-width;
-	margin-left: -3px;
-	}
-	&-progress {
-		width: @inner-blocks-width/2;
-		height: 4px;
-		box-sizing: border-box; 
-		position: absolute;
-		z-index: 100;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-		background-image: linear-gradient(to right, 
-			@sub-menu-color 34%,
-			lighten(@sub-menu-color, 25%) 33%);
-		background-image: -webkit-linear-gradient(to right,
-			@sub-menu-color 33%,
-			lighten(@sub-menu-color, 25%) 33%);
-		background-image: -o-linear-gradient(to right,
-			@sub-menu-color 33%,
-			lighten(@sub-menu-color, 25%) 33%);
-		background-image: -moz-linear-gradient(to right,
-			@sub-menu-color 33%,
-			lighten(@sub-menu-color, 25%) 33%);
+	@media (max-width: @media-width-all) {width: @main-blocks-width;}
 	}
 }
+
 
 .b-shop {
 	margin: 0 auto;
 	background-color: lighten(@sub-menu-color, 25%);
 	&__item {
 		width: @inner-blocks-width/2;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
 		display: inline-block;
 		position: relative;
 		margin-left: -5px;
@@ -225,13 +235,13 @@ body, html {
 
 /*Styling b-footer*/
 footer {
-	display: table-row;
 	width: 100%;
+	display: table-row;
 }
 
 .b-footer {
 	background-color: @sub-menu-color;
-	height: 180px;
+	padding: 0 0 30px 0;
 	&-menu {
 		display: inline-block;
 		vertical-align: top;
@@ -275,3 +285,4 @@ footer {
 		}
 	}
 }
+
