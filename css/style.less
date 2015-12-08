@@ -207,6 +207,7 @@ body {
 	background-color: lighten(@sub-menu-color, 25%);
 	& ul {
 		width: @inner-blocks-width;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
 		margin: 0 auto;
 	}
 	&-article {
