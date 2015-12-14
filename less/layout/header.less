@@ -1,0 +1,11 @@
+.header {
+	background-color: @menu-color;
+	height: 60px;
+	&-container {
+		width: @inner-blocks-width;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+	}
+}

@@ -1,0 +1,37 @@
+.main-gallery {
+	text-align: center;
+	background: url(../images/background-up.png); 
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0 auto;
+	@media (max-width: @media-width-all) {width: @main-blocks-width;}
+	&__prev {
+		position: absolute;
+		top: 50%;
+		left: 9%;
+		font-size: 50px;
+		text-decoration: none;
+		color: @sub-menu-color;
+		&:hover {
+			color: darken(@sub-menu-color, 20%);
+		}
+		@media (max-width: @media-width-all) {left: 0;}
+	}
+	&__next {
+		position: absolute;
+		top: 50%;
+		right: 9%;
+		font-size: 50px;
+		text-decoration: none;
+		color: @sub-menu-color;
+		&:hover {
+			color: darken(@sub-menu-color, 20%);
+		}
+		@media (max-width: @media-width-all) {right: 0;}
+	}
+    & img {
+		margin-bottom: -5px;
+		width: @inner-blocks-width;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
+	}
+}

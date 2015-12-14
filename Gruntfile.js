@@ -4,19 +4,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     less: {
       development: {
-        options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
-        },
         files: {
-          "css/style.css": "css/style.less" // destination file and source file
+          "css/style.css": "less/style.less" // destination file and source file
         }
       }
     },
     watch: {
       styles: {
-        files: ['css/style.less'], // which files to watch
+        files: ['less/style.less'], // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true

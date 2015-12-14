@@ -1,0 +1,45 @@
+.header-menu {
+	display: inline-block;
+	margin-left: 20px;
+	@media (max-width: @media-width-mobile) {width: 200px; margin-top: 42px;}
+	& > li {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 20px;
+		@media (max-width: @media-width-mobile) {padding: 10px; font-size: @font-size-regular;}
+		&:hover {
+			background-color: darken(@menu-color,5%);
+		}
+	& span {
+		outline: none;
+	}
+	& ul {
+		position: absolute;
+		display: none;
+		width: 150px; 
+		left: 0;
+		right: 0;
+		top: 50px;
+		z-index: 100;
+		text-align: left;
+		& li {
+			margin-top: 20px;
+			width: 150px;
+		}
+		& a {
+			padding: 10px;
+			margin-top: -10px;
+			text-transform: none;
+			background-color: lighten(@sub-menu-color,25%);
+			color: #707070;
+		&:hover {
+			background-color: @menu-color;
+			color: #fff;
+		}
+		}
+	}
+	}
+}

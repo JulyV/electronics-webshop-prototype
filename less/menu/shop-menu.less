@@ -1,0 +1,36 @@
+.shop-menu-container {
+	position: fixed;
+	top: 35%;
+	left: 0;
+	color: #fff;
+	& > ul > li {
+		text-transform: uppercase;
+		& > span {
+			padding: 10px;
+			cursor: pointer;
+			background-color: @menu-color;
+			display: block;
+			width: 100px;
+			outline-color: darken(@menu-color,10%);
+			&:hover {
+				background-color: darken(@menu-color,5%);
+			}
+		}
+		& ul {
+			display: none;
+			& li {
+				text-transform: none;
+				& a {
+					.g-a-style;
+					padding: 10px;
+					width: 100px;
+					display: block;
+					background-color: #fff;
+					&:hover {
+						background-color: lighten(@menu-color, 50%);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.main-news {
+	background-color: lighten(@sub-menu-color, 25%);
+	& ul {
+		width: @inner-blocks-width;
+		@media (max-width: @media-width-all) {width: @main-blocks-width;}
+		margin: 0 auto;
+	}
+	& li {
+		display: inline-block;
+		width: @inner-blocks-width/1.5;
+		margin: 20px 0 20px -5px;
+		text-align: left;
+		color: #707070;
+		@media (max-width: @media-width-all) {
+			width: @main-blocks-width;
+			font-size: 14px;
+		}
+		& h1 {
+			font-weight: 700;
+			padding-left: 10px;
+		}
+		& p {
+			padding: 10px;
+		}
+	}
+}
