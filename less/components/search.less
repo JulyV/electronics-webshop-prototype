@@ -1,21 +1,21 @@
 .header-search {
 	margin-left: 20px;
 	display: inline-block;
-	& input {
-		background-color: @search-background-color;
-		border: none;
-		padding: 4px;
-		@media (max-width: @media-width-mobile) {position: absolute; top: 10px; left: 0; right: 0; margin: 0 auto; width: 190px;}
+}
+.search-form input {
+	background-color: @search-background-color;
+	border: none;
+	padding: 4px;
+	@media (max-width: @media-width-mobile) {position: absolute; top: 10px; left: 0; right: 0; margin: 0 auto; width: 190px;}
 	&:focus {
 		outline: none;
 	}
-	}
-	&_wide {
-		position: absolute;
-		top: 20px;
-		left: 10%;
-		& input {
-			width: 300px;
-		}
-	}
+}
+.header-search_wide {
+	position: absolute;
+	top: 20px;
+	left: 10%;
+}
+.search-form_wide input {
+	width: 300px;
 }

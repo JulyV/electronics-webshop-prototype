@@ -7,7 +7,7 @@ $("main").mousemove(function(e) {
     var pageY = e.pageY - ($(window).height() / 2);
     var newvalueX = width * pageX * -1 - 25;
     var newvalueY = height * pageY * -1 - 50;
-    $('.main-gallery').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    $('.gallery').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
 
 $(".header-menu").click(function(){

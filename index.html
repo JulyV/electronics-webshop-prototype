@@ -27,8 +27,8 @@
                     <img src="images/logo.png" />
                 </div>
                 <ul class="header-menu">
-                    <li><span>Gsm</span>
-                        <ul>
+                    <li><span class="header-menu__name">Gsm</span>
+                        <ul class="header-menu-dropdown">
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
@@ -36,8 +36,8 @@
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                         </ul>
                     </li>
-                    <li><span>3G</span>
-                        <ul>
+                    <li><span class="header-menu__name">3G</span>
+                        <ul class="header-menu-dropdown">
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
@@ -45,8 +45,8 @@
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                         </ul>
                     </li>
-                    <li><span>Voip</span>
-                        <ul>
+                    <li><span class="header-menu__name">Voip</span>
+                        <ul class="header-menu-dropdown">
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
@@ -54,8 +54,8 @@
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                         </ul>
                     </li>
-                    <li><span>Wi-Fi</span>
-                        <ul>
+                    <li><span class="header-menu__name">Wi-Fi</span>
+                        <ul class="header-menu-dropdown">
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
                             <li><a href="shop.html">Lorem Ipsum</a></li>
@@ -65,7 +65,7 @@
                     </li>
                 </ul>
                 <div class="header-search">
-                    <form name="header-search" target="#here" method="post">
+                    <form class="search-form" name="header-search" target="#here" method="post">
                         <input name="search" type="text" placeholder="Search"/>
                     </form>
                 </div>
@@ -76,49 +76,49 @@
         </div>
     </header>
      <main>
-        <div class="main-gallery">
-            <a href="#" class="main-gallery__prev"><</a>
-            <a href="#" class="main-gallery__next">></a>
-            <a href="#"><img src="images/header.jpg"></a>
+        <div class="gallery">
+            <a href="#" class="gallery__prev"><</a>
+            <a href="#" class="gallery__next">></a>
+            <a href="#" class="gallery__banner"><img src="images/header.jpg"></a>
         </div>
-        <div class="main-news">
+        <div class="news">
             <ul>
-                <li>
+                <li class="news-article">
                     <h1>Lorem Inpsum</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                     </p>
                 </li>
-                <li>
+                <li class="news-article">
                     <h1>Lorem Inpsum</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                     </p>
                 </li>
-                <li>
+                <li class="news-article">
                     <h1>Lorem Inpsum</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                     </p>
                 </li>
-                <li>
+                <li class="news-article">
                     <h1>Lorem Inpsum</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                     </p>
                 </li>
             </ul>
         </div>
-        <div class="main-shop">
-            <div class="main-shop__item">
+        <div class="shop-categories">
+            <div class="shop-categories__item">
                 <img src="images/gsm.jpg" />
                 <a href="#"><h1>GSM</h1></a>
             </div>
-            <div class="main-shop__item">
+            <div class="shop-categories__item">
                 <img src="images/3g.png" />
                 <a href="#"><h1>3G</h1></a>
             </div><br/>
-            <div class="main-shop__item">
+            <div class="shop-categories__item">
                 <img src="images/voip.png" />
                 <a href="#"><h1>VOIP</h1></a>
             </div>
-            <div class="main-shop__item">
+            <div class="shop-categories__item">
                 <img src="images/wifi.png" />
                 <a href="#"><h1>Wi-Fi</h1></a>
             </div>
@@ -152,7 +152,7 @@
             </div> 
             <div class="footer-menu">
                     <h2>Sign for news</h2>
-                    <form name="footer-menu-form" target="#here" method="post">
+                    <form class="footer-menu-form" name="footer-menu-form" target="#here" method="post">
                         <input name="username" type="text" />
                         <button type="button">Sign</button>
                     </form>

@@ -1,0 +1,30 @@
+.shop-categories {
+	margin: 0 auto;
+	text-align: center;
+	background: url(../images/background-down.png); 
+	background-repeat: no-repeat;
+	background-position: right bottom; 
+}
+.shop-categories__item {
+	width: @inner-blocks-width/2;
+	display: inline-block;
+	position: relative;
+	@media (max-width: @media-width-all) {width: @main-blocks-width;}
+}
+.shop-categories__item img {
+	width: 100%;
+}
+.shop-categories__item h1 {
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	bottom: 4px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	background-color: @menu-color;
+	color: #fff;
+	&:hover {
+		background-color: darken(@menu-color, 10%);
+	}
+}

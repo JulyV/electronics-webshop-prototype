@@ -2,44 +2,44 @@
 	height: 30px;
 	background-color: @sub-menu-color;
 	text-align: center;
-	&-menu {
-		width: @inner-blocks-width/1.5;
-		@media (max-width: @media-width-all) {width: 60%;}
-		@media (max-width: @media-width-mobile) {display: none;}
-		display: inline-block;
-		text-align: right;
-		& li {
-			display: inline-block;
-			margin-top: 5px;	
-			& a {
-				text-transform: uppercase;
-				.g-a-style;
-				font-size: @font-size-small;
-				@media (max-width: @media-width-all) {font-size: @mobile-font-size;}
-				margin-right: 20px;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
+}
+
+.top-header-menu {
+	width: @inner-blocks-width/1.5;
+	display: inline-block;
+	text-align: right;
+	@media (max-width: @media-width-all) {width: 60%;}
+	@media (max-width: @media-width-mobile) {display: none;}
+}
+.top-header-menu li {
+	display: inline-block;
+	margin-top: 5px;
+}
+.top-header-menu a {
+	.g-a-style;
+	text-transform: uppercase;
+	font-size: @font-size-small;
+	margin-right: 20px;
+	&:hover {
+		text-decoration: underline;
 	}
-	&-contacts {
-		width: @inner-blocks-width/2;
-		@media (max-width: @media-width-all) {width: 30%;}
-		@media (max-width: @media-width-mobile) {width: 100%;}
-		display: inline-block;
-		text-align: left;
-		@media (max-width: @media-width-mobile) {text-align: center; margin-top: 5px;}
-		& li {
-			display: inline-block;
-			max-width: 200px;
-			min-width: 80px;
-			margin-right: 10px;
-		}
-		& span {
-			font-size: @font-size-small;
-			@media (max-width: @media-width-all) {font-size: @mobile-font-size;}
-			text-transform: uppercase;
-		}
-	}
+	@media (max-width: @media-width-all) {font-size: @mobile-font-size;}
+}
+.top-header-contacts {
+	width: @inner-blocks-width/2;
+	display: inline-block;
+	text-align: left;
+	@media (max-width: @media-width-mobile) {text-align: center; margin-top: 5px; width: 100%;}
+	@media (max-width: @media-width-all) {width: 30%;}
+}
+.top-header-contacts li {
+	display: inline-block;
+	max-width: 200px;
+	min-width: 80px;
+	margin-right: 10px;
+}
+.top-header-contacts span {
+	font-size: @font-size-small;
+	text-transform: uppercase;
+	@media (max-width: @media-width-all) {font-size: @mobile-font-size;}
 }
