@@ -1,19 +1,19 @@
 .shop-products {
+	margin: 100px auto 0 auto;
 	width: @inner-blocks-width;
 	text-align: center;
-	margin: 100px auto 0 auto;
 	@media (max-width: @media-width-mobile) {margin-bottom: 0; float: right;}
 }
 .products-block {
-	display: inline-block;
 	margin: 0 40px 50px 50px;
+	display: inline-block;
 }
 .products-block a {
 	.g-a-style;
-	padding: 10px;
-	background-color: lighten(@sub-menu-color,20%);
 	display: block;
+	padding: 10px;
 	text-align: center;
+	background-color: lighten(@sub-menu-color,20%);
 	cursor: pointer;
 	&:hover {
 		text-decoration: none;
@@ -36,7 +36,7 @@
 	padding: 0;
 	background-color: #fff;
 	&:hover {
-		background-color: #fff;
 		text-decoration: underline;
+		background-color: #fff;
 	}
 }

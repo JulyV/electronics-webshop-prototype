@@ -1,7 +1,7 @@
 .top-header {
 	height: 30px;
-	background-color: @sub-menu-color;
 	text-align: center;
+	background-color: @sub-menu-color;
 }
 
 .top-header-menu {
@@ -12,14 +12,14 @@
 	@media (max-width: @media-width-mobile) {display: none;}
 }
 .top-header-menu li {
-	display: inline-block;
 	margin-top: 5px;
+	display: inline-block;
 }
 .top-header-menu a {
 	.g-a-style;
+	margin-right: 20px;
 	text-transform: uppercase;
 	font-size: @font-size-small;
-	margin-right: 20px;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -33,10 +33,10 @@
 	@media (max-width: @media-width-all) {width: 30%;}
 }
 .top-header-contacts li {
+	margin-right: 10px;
 	display: inline-block;
 	max-width: 200px;
 	min-width: 80px;
-	margin-right: 10px;
 }
 .top-header-contacts span {
 	font-size: @font-size-small;
