@@ -317,11 +317,6 @@ body {
     text-align: left;
   }
 }
-@media (max-width: 635px) {
-  .header-search_wide {
-    left: 60px;
-  }
-}
 .header-search_wide input {
   padding: 4px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -337,7 +332,7 @@ body {
 }
 @media (max-width: 635px) {
   .header-search_wide input {
-    width: 62.5%;
+    width: 57.69230769%;
   }
 }
 .header-cart img {
