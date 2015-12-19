@@ -1,52 +1,69 @@
-.header-menu,
-.header-menu_shop {
-	margin-left: 20px;
-	display: inline-block;
-	@media (max-width: @media-width-mobile) {width: 250px; margin-top: 21px;}
+.main-menu {
+
+	li {
+		position: relative;
+		display: inline-block;
+		@media (max-width: @media-width-all) {
+			display: block;
+		}
+
+	}
 }
-.header-menu  > li,
-.header-menu_shop > li {
-	position: relative;
-	display: inline-block;
-	padding-top: 21px;
-}
-.header-menu__name {
+
+.menu__title {
+	.menu-style;
+	display: block;
 	outline: none;
 	padding: 21px;
-	text-transform: uppercase;
-	color: #fff;
-	cursor: pointer;
-	&:hover {
-		background-color: darken(@menu-color,5%);
+
+	@media (max-width: @media-width-mobile) {
+		padding: 10px;
 	}
-	@media (max-width: @media-width-mobile) {padding: 10px; font-size: @font-size-regular;}
 }
-.header-menu-dropdown {
+
+.dropdown {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 50px;
+	top: 29px;
 	z-index: 100;
+	margin-top: 31px;
 	display: none;
 	width: 150px; 
 	text-align: left;
-	@media (max-width: @media-width-mobile) {top: 40px;}
-}
-.header-menu-dropdown li {
-	margin-top: 20px;
-	width: 150px;
-}
-.header-menu-dropdown a {
-	margin-top: -10px;
-	padding: 10px;
-	text-transform: none;
-	background-color: lighten(@sub-menu-color,25%);
-	color: #707070;
-	&:hover {
-		background-color: @menu-color;
-		color: #fff;
+
+	li {
+		position: relative;
+
+		a {
+			.g-a-style;
+			padding: 10px;
+			display: block;
+			text-transform: none;
+			text-align: center;
+			background-color: lighten(@sub-menu-color,25%);
+			color: #707070;
+
+			&:hover {
+				background-color: @menu-color;
+				color: #fff;
+			}
+
+			@media (max-width: @media-width-all) {
+				font-size: @font-size-small;
+			}
+		}
+
+		@media (max-width: @media-width-all) {
+			width: @main-blocks-width;
+		}
 	}
-}
-ul.header-menu_shop {
-	@media (max-width: @media-width-all) {display: none;}
+
+
+	@media (max-width: @media-width-all) {
+		position: relative;
+		margin-top: -30px;
+		margin-bottom: 29px;
+		width: @main-blocks-width;
+	}
 }

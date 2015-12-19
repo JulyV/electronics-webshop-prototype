@@ -1,0 +1,48 @@
+main {
+	@media (max-width: @media-width-all) {
+		width: 70%;
+		float: right;
+		margin-top: 30px;
+	}
+}
+
+.gallery {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../images/background-up.png); 
+	background-repeat: no-repeat;
+
+	@media (max-width: @media-width-all) {width: @main-blocks-width;}
+}
+
+.news {
+	background-color: lighten(@sub-menu-color, 25%);
+
+	ul {
+		margin: 0 auto;
+		width: @inner-blocks-width;
+
+		@media (max-width: @media-width-all) {
+			width: @main-blocks-width;
+		}
+	}
+}
+
+.shop-categories {
+	margin: 0 auto;
+	background: url(../images/background-down.png); 
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	text-align: center;
+}
+
+.shop-products {
+	margin: @margin-large auto 0 auto;
+	width: @inner-blocks-width;
+	text-align: center;
+
+	@media (max-width: @media-width-mobile) {
+		margin-top: @margin-large;
+	}
+}

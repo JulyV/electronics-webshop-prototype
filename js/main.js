@@ -10,17 +10,8 @@ $("main").mousemove(function(e) {
     $('.gallery').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
 
-$(".header-menu").click(function(){
-	$(this).accordion({
-		collapsible: true,
-    });
-});
-
-$(".shop-menu").click(function(){
-	$(this).accordion({
-		collapsible: true,
-    });
-
+$(".main-menu li").click(function(){
+	$('li > ul').not($(this).children("ul").toggle()).hide();
 });
 
 });

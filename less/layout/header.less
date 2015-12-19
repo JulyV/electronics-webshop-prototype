@@ -1,12 +1,46 @@
 .header {
-	height: 60px;
+	width: @main-blocks-width;
 	background-color: @menu-color;
-	@media (max-width: @media-width-all) {height: 70px;}
 }
+
 .header-container {
 	position: relative;
 	margin: 0 auto;
 	width: @inner-blocks-width;
 	text-align: center;
-	@media (max-width: @media-width-all) {width: @main-blocks-width;}
+
+	@media (max-width: @media-width-all) {
+		position: fixed;
+		left: 0;
+		top: 30px;
+		z-index: 100;
+		width: 30%;
+		background-color: @menu-color;
+	}
+}
+
+.search-container {
+	margin-left: 20px;
+	display: inline-block;
+
+	@media (max-width: @media-width-all) {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 100;
+		margin: 5px auto;
+	}
+}
+
+.menu-container {
+	position: relative;
+	margin-left: 20px;
+	display: inline-block;
+
+	@media (max-width: @media-width-all) {
+		margin-left: 0;
+		margin-top: 35px;
+		display: block;
+	}
 }

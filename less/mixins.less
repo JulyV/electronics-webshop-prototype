@@ -1,9 +1,32 @@
-.g-font-style {
+.g-font-style() {
 	font-family: Arial;
 	font-size: @font-size-large;
 	color: @font-color;
 }
-.g-a-style {
+
+.g-a-style() {
 	.g-font-style;
 	text-decoration: none;
+}
+
+.menu-style() {
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;	
+
+	&:hover {
+		background-color: darken(@menu-color,5%);
+	}
+}
+
+.sub-menu-style() {
+	font-size: @font-size-regular;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: @media-width-mobile) {
+		font-size: @font-size-small;
+	}
 }

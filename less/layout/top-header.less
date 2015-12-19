@@ -2,5 +2,13 @@
 	height: 30px;
 	text-align: center;
 	background-color: @sub-menu-color;
+	width: @main-blocks-width;
+
+
+	@media (max-width: @media-width-all) {
+		position: fixed;
+		top: 0;
+		z-index: 200;
+	}
 }
 
