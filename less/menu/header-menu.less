@@ -3,10 +3,15 @@
 	li {
 		position: relative;
 		display: inline-block;
+
 		@media (max-width: @media-width-all) {
 			display: block;
 		}
 
+	}
+
+	@media (max-width: @media-width-mobile) {
+		display: none;
 	}
 }
 
@@ -45,17 +50,9 @@
 			color: #707070;
 
 			&:hover {
-				background-color: @menu-color;
+				background-color: darken(@sub-menu-color,5%);
 				color: #fff;
 			}
-
-			@media (max-width: @media-width-all) {
-				font-size: @font-size-small;
-			}
-		}
-
-		@media (max-width: @media-width-all) {
-			width: @main-blocks-width;
 		}
 	}
 
