@@ -286,7 +286,7 @@ body {
     padding: 10px;
   }
 }
-.dropdown {
+.main-submenu {
   position: absolute;
   left: 0;
   right: 0;
@@ -297,10 +297,10 @@ body {
   width: 150px;
   text-align: left;
 }
-.dropdown li {
+.main-submenu li {
   position: relative;
 }
-.dropdown li a {
+.main-submenu li a {
   font-family: Arial;
   font-size: 16px;
   text-decoration: none;
@@ -311,12 +311,12 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
   color: #707070;
 }
-.dropdown li a:hover {
+.main-submenu li a:hover {
   background-color: rgba(165, 165, 165, 0.8);
   color: #fff;
 }
 @media (max-width: 925px) {
-  .dropdown {
+  .main-submenu {
     position: relative;
     margin-top: -30px;
     margin-bottom: 29px;
