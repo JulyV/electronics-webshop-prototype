@@ -1,11 +1,11 @@
-.g-font-style() {
+.font-style() {
 	font-family: Arial;
 	font-size: @font-size-large;
 	color: @font-color;
 }
 
-.g-a-style() {
-	.g-font-style;
+.link-style() {
+	.font-style;
 	text-decoration: none;
 }
 
@@ -26,7 +26,7 @@
 		text-decoration: underline;
 	}
 
-	@media (max-width: @media-width-mobile) {
+	@media (max-width: @breakpoint-mobile) {
 		font-size: @font-size-small;
 	}
 }

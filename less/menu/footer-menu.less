@@ -7,7 +7,7 @@
 	&:nth-child(4) {
 		margin-right: 0;
 
-		@media (max-width: @media-width-mobile) {
+		@media (max-width: @breakpoint-mobile) {
 			margin-bottom: @margin-standard;
 		}
 	}
@@ -16,12 +16,12 @@
 		margin-bottom: @margin-small;
 		font-weight: 700;
 
-		@media (max-width: @media-width-mobile) {
+		@media (max-width: @breakpoint-mobile) {
 			font-size: @font-size-small;
 		}
 	}
 
-	@media (max-width: @media-width-mobile) {
+	@media (max-width: @breakpoint-mobile) {
 		margin-bottom: 0;
 		margin-right: @margin-standard;
 	}
@@ -29,7 +29,7 @@
 
 .menu-column {
 	a {
-		.g-a-style;
+		.link-style;
 		.sub-menu-style;
 	}
 
@@ -37,7 +37,7 @@
 		margin-bottom: @margin-small;
 	}
 
-	@media (max-width: @media-width-mobile) {
+	@media (max-width: @breakpoint-mobile) {
 		font-size: @font-size-small;
 	}
 }
@@ -55,7 +55,7 @@
 	}
 
 	button {
-		.g-font-style;
+		.font-style;
 		padding: 3px 10px;
 		text-align: center;
 		background-color: @menu-color;

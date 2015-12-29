@@ -1,31 +1,30 @@
 main {
-	@media (max-width: @media-width-all) {
+	@media (max-width: @breakpoint-tablet) {
 		float: right;
 		margin-top: 30px;
 		width: 70%;
 	}
 
-	@media (max-width: @media-width-mobile) {
+	@media (max-width: @breakpoint-mobile) {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
-		width: @main-blocks-width;
+		width: 100%;
 	}
 }
 
 .section-layout {
 	position: relative;
 	margin: 0 auto;
-	width: @inner-blocks-width;
+	width: 75%;
 	text-align: center;
 
-	@media (max-width: @media-width-all) {
-		width: @main-blocks-width;
+	@media (max-width: @breakpoint-tablet) {
+		width: 100%;
 	}
 }
 
 .gallery-layout {
-	width: @main-blocks-width;
 	background: url(../images/background-up.png); 
 	background-repeat: no-repeat;
 }

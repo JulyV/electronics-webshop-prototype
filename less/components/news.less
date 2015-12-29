@@ -2,8 +2,8 @@
 	background-color: lighten(@top-menu-color, 25%);
 
 	ul {
-		@media (max-width: @media-width-all) {
-			width: @main-blocks-width;
+		@media (max-width: @breakpoint-tablet) {
+			width: 100%;
 		}
 	}
 }
@@ -11,7 +11,7 @@
 .article {
 	margin: @margin-standard 0 @margin-standard -5px;
 	display: inline-block;
-	width: @inner-blocks-width/1.5;
+	width: 75%/1.5;
 	text-align: left;
 
 	h1 {
@@ -23,8 +23,8 @@
 		padding: 10px;
 	}
 
-	@media (max-width: @media-width-all) {
-		width: @main-blocks-width; 
+	@media (max-width: @breakpoint-tablet) {
+		width: 100%; 
 		font-size: @font-size-regular;
 	}
 }
